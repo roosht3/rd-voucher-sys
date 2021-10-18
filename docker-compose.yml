@@ -25,6 +25,7 @@ services:
     dns: 8.8.8.8
     environment:
       COMPOSER_MEMORY_LIMIT: -1
+      WAIT_HOSTS: order_db:3306
     volumes:
       - ~/.composer-docker/cache:/root/.composer/cache:delegated
       - ~/.ssh/id_rsa:/root/.ssh/id_rsa
@@ -46,7 +47,7 @@ services:
       - 3306
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: database
+      MYSQL_DATABASE: dbcontent
       MYSQL_USER: db
       MYSQL_PASSWORD: db@123
       TZ: UTC
@@ -61,6 +62,7 @@ services:
     dns: 8.8.8.8
     environment:
       COMPOSER_MEMORY_LIMIT: -1
+      WAIT_HOSTS: voucher_db:3306
     volumes:
       - ~/.composer-docker/cache:/root/.composer/cache:delegated
       - ~/.ssh/id_rsa:/root/.ssh/id_rsa
@@ -82,7 +84,7 @@ services:
       - 3306
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: database
+      MYSQL_DATABASE: dbcontent
       MYSQL_USER: db
       MYSQL_PASSWORD: db@123
       TZ: UTC

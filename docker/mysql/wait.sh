@@ -3,7 +3,7 @@
 maxcounter=45
 
 counter=1
-while ! mysql --protocol TCP -uroot -proot -e "show databases;" > /dev/null 2>&1; do
+while ! mysql --protocol TCP -u root -p root -e "show databases;" > /dev/null 2>&1; do
     sleep 5
     echo "Waiting for MySQL..."
     counter=`expr $counter + 1`
