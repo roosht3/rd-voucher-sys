@@ -1,4 +1,3 @@
 #!/bin/sh
 
-php artisan migrate
-php -S localhost:8000 -t public
+php -S gateway:8000 -t public

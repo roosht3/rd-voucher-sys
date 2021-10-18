@@ -1,0 +1,2 @@
+CREATE DATABASE IF NOT EXISTS dbcontent;
+GRANT ALL ON *.* TO 'root'@'%';

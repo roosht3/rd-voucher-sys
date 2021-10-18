@@ -10,7 +10,8 @@ For example Microservice
 * Docker
 
 ### Endpoint
-* http://real.digital/api/v1/order?email=rooshan@elakiri.com&value=300
+* http://real.digital/api/v1/order?email=rooshan@elakiri.com&value=300 (with nginx proxy)
+* http://localhost:8000/api/v1/order?email=rooshan@elakiri.com&value=300 (direct access)
 
 ## Chosen solution
 ![](https://i.imgur.com/GOH8AO5.png)

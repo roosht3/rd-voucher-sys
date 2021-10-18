@@ -26,6 +26,6 @@ class OrderController extends Controller
 
         dispatch(new OrderJob($order));
 
-        return response()->json($order, 202);
+        return response()->json($order, 200);
     }
 }
