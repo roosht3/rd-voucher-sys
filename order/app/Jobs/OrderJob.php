@@ -23,7 +23,7 @@ class OrderJob extends Job
         }
 
         dispatch(new VoucherJob([
-            'email' => $this->order->email
+            'order' => $this->order
         ]));
     }
 }
